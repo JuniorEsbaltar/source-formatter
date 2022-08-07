@@ -8,20 +8,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-  <title>Help format</title>
+  <title>Help Format</title>
 </head>
 <body>
   <header class="bg-black">
     <img src="https://img.quizur.com/f/img61f02892e7d236.48879662.jpeg?lastEdited=1643128987" />
   </header>
   <main>
-    <section class="unformated default-border">
-      <textarea id="unformatedSource"></textarea>
-    </section>
-    <section class="formated default-border">
-      <textarea id="query" disabled></textarea>
-      <textarea id="variables" disabled></textarea>
-    </section>
+    <div class="container">
+      <section class="unformated column">
+        <textarea id="unformatedSource"></textarea>
+      </section>
+      <section class="formated column">
+        <div class="input-box">
+          <button onclick="copyAction('query')" class="copy-cation">copiar</button>
+          <textarea id="query" disabled></textarea>
+        </div>
+        <div class="input-box">
+          <button onclick="copyAction('variables')" class="copy-cation">copiar</button>
+          <textarea id="variables" disabled></textarea>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="bg-black"></footer>
   <script src="script.js"></script>
